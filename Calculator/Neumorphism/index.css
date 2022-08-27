@@ -80,3 +80,30 @@ body {
     color: #fff;
     border: 2px solid #edf1f4;
 }
+
+.calculator .buttons span#equal {
+    grid-row: span 2;
+    background-color: #2196f4;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equal:active {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff, inset 5px 5px 10px rgba(0,0,0,0.1)
+}
+
+
+.toggleBtn {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    background-color: #555;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1), -5px -5px 10px #fff
+}
