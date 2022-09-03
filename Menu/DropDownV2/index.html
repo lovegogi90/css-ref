@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropDwon Menu V2</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+  <main class="dropdown">
+    <input type="text" class="text02" readonly placeholder="DropDown Menu">
+    <div class="option">
+      <div onmouseover="show('Html')">Html</div>
+      <div onmouseover="show('CSS')">CSS</div>
+      <div onmouseover="show('Javascript')">Javascript</div>
+      <div onmouseover="show('ReactJS')">ReactJS</div>
+      <div onmouseover="show('Photoshop')">Photoshop</div>
+    </div>
+  </main>
+</body>
+<script>
+  var dropdown = document.querySelector('.dropdown');
+  dropdown.addEventListener('click', function(){
+    dropdown.classList.toggle('active');
+  })
+
+  function show(a){
+    document.querySelector('.text02').value = a;
+  }
+</script>
+</html>
