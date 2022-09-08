@@ -4,7 +4,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: consolas, sans-serif;
+  font-family: inconsolata, sans-serif;
   min-height: 100vh;
   background-color: #eaeef0;
 }
@@ -52,13 +52,15 @@ body {
   width: 340px;
   height: 340px;
   border-radius: 50%;
+  animation: simpleText 25s linear infinite;
 }
 
 .text b {
   position: absolute;
   display: block;
-  inset: 50%;
-  transform-origin: 0 170px;
+  left: 50%;
+  top: 0px;
+  transform-origin: 0px 170px;
   font-weight: normal;
   font-size: 1.4em;
 }
@@ -71,3 +73,13 @@ body {
   }
 }
 
+@keyframes simpleText {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+  
+}
